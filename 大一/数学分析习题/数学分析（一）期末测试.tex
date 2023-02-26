@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper, oneside,UTF8]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, hyperref, mathrsfs,amsfonts}
+\usepackage[left=1.0cm,right=1.0cm,top=1.5cm,bottom=1.5cm]{geometry}
+%\linespread{1.5}
+\definecolor{shadecolor}{RGB}{255, 255, 255}
+\newcounter{problemname}
+\newenvironment{problem}{\begin{shaded}\stepcounter{problemname}\par\noindent\textbf{题目\arabic{problemname}. }}{\end{shaded}\par}
+\newenvironment{solution}{\par\noindent\textbf{解答. }}{\par}
+\newenvironment{note}{\par\noindent\textbf{题目\arabic{problemname}的注记. }}{\par}
+\ctexset{ section = { format={\Large \bfseries } } }
+
+\title{数学分析（一）期末考试题}
+\author{李冠霖}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{problem}
+已知$\lim_{x \to +\infty} \limits (\sqrt{x^{2} + 3x + 2} + ax + b) = 0$，求$a,b$
+\end{problem}
+\begin{problem}
+对于数列${x_{n}}$，已知$x_{1} = 1,x_{n + 1} = \sqrt{1 + x_{n}}$，求证$x_{n}$收敛，并求出它的极限
+\end{problem}
+\begin{problem}
+已知$f(x) = x + \int_{0}^{3}f(x) \mathrm{d} x$，求$\int_{0}^{3} f(x) \mathrm{d} x$.
+\end{problem}
+\begin{problem}
+已知$f(x) = \lim_{n \to \infty} \limits \dfrac{x^{2}e^{n(x - 1)} + ax + b}{1 + e^{n(x - 1)}}$，讨论$f(x)$的连续性与可导性
+\end{problem}
+\begin{problem}
+$f(x) = \ln (1 - ax) + \frac{x}{1 - bx}$，讨论$a,b$为何值的时候$f(x)$在$x \to 0$时无穷小的阶数最大
+\end{problem}
+\begin{problem}
+$f(x)$连续可导，$f(0) = 0$求$\lim_{x \to 0} \limits \frac{1}{x} \int_{0}^{1}f(xt) \mathrm{d} x$
+\end{problem}
+\begin{problem}
+$f(x) = \frac{x^{3}}{2{(1 - x)}^{2}} $，求函数的定义域，单调性，极值点，凹凸性，拐点，渐近线，并作出图像
+\end{problem}
+\begin{problem}
+求$r = 3(1 + \cos \theta) $围成的面积
+\end{problem}
+\begin{problem}
+求以下四个积分
+\begin{equation}
+    \int \frac{x^{2}}{{(1 + x^{2})}^{2}} \mathrm{d}
+\end{equation}
+\begin{equation}
+    \int |x| \mathrm{d} x
+\end{equation}
+\begin{equation}
+    \int_{0}^{\frac{\pi}{2}} \frac{x}{1 + \cos x} \mathrm{d} x
+\end{equation}
+\begin{equation}
+    \int_{4}^{+ \infty} \frac{1}{\sqrt{x}(1 - x)} \mathrm{d} x
+\end{equation}
+\end{problem}
+\begin{problem}
+$f(x)$在$[a,b]$上单调递增，$f(a) > a, f(b) < b $求证$\exists c \in [a,b],f(c) = c$
+\end{problem}
+\end{document}
+
