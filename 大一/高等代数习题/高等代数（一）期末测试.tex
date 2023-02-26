@@ -2,7 +2,7 @@
 \usepackage{amsmath, amsthm, amssymb, bm, color, framed, graphicx, hyperref, mathrsfs,amsfonts}
 \usepackage[left=1.0cm,right=1.0cm,top=1.5cm,bottom=1.5cm]{geometry}
 %\linespread{1.5}
-\definecolor{shadecolor}{RGB}{241, 241, 255}
+\definecolor{shadecolor}{RGB}{255, 255, 255}
 \newcounter{problemname}
 \newenvironment{problem}{\begin{shaded}\stepcounter{problemname}\par\noindent\textbf{题目\arabic{problemname}. }}{\end{shaded}\par}
 \newenvironment{solution}{\par\noindent\textbf{解答. }}{\par}
@@ -10,14 +10,55 @@
 \ctexset{ section = { format={\Large \bfseries } } }
 
 \title{高等代数（一）期末考试题}
-\author{李冠霖 221502012}
+\author{李冠霖}
 \date{\today}
 \begin{document}
 \maketitle
-\tableofcontents
-\newpage
 \begin{problem}
-    
+已知$f(x) | f(x^{n})$，求证，$f(x)$的根只能是0或者单位根
+\end{problem}
+\begin{problem}
+计算行列式
+\begin{equation*}
+    \left|\begin{matrix}
+        a_{1}  & b_{1}  & 0      & 0      & \cdots & 0      \\
+        0      & a_{2}  & b_{2}  & 0      & \cdots & 0      \\
+        0      & 0      & a_{3}  & b_{3}  & \cdots & 0      \\
+        \vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+        b_{n}  & 0      & 0      & 0      & \cdots & a_{n}
+    \end{matrix}\right|
+\end{equation*}
+\begin{note}
+    其实原题还有一个转置的这个行列式，不过本人比较懒，不想打了，各位看官自己将就将就QAQ
+\end{note}
+\end{problem}
+\begin{problem}
+求证向量组$\alpha_{1},\alpha_{2},\alpha_{3},\ldots,\alpha_{s}$线性无关等价于$\beta - \alpha_{1},\beta - \alpha{2}, \ldots , \beta - \alpha_{s} $ 线性无关，其中$\beta = \sum_{i = 1}^{n} \limits \alpha_{i}$
+\end{problem}
+\begin{problem}
+二次曲线过点$(0,0)(1,1)(2,1)(1,4)(1,0) $，求二次曲线的方程
+\end{problem}
+\begin{problem}
+$A^{*}$是矩阵$
+    \left[\begin{matrix}
+            a_{11} & a_{12} & a_{13} \\
+            a_{21} & a_{22} & a_{23} \\
+            a_{31} & a_{32} & a_{33}
+        \end{matrix}\right]
+$的伴随矩阵，$|A| = 2$，矩阵$B =
+    \left[\begin{matrix}
+            -a_{11} & a_{12} & a_{13} \\
+            -a_{21} & a_{22} & a_{23} \\
+            -a_{31} & a_{32} & a_{33}
+        \end{matrix}\right]$，求$A^{*}B$
+\end{problem}
+\begin{problem}
+矩阵$A =
+    \left[\begin{matrix}
+            1 & -2 & 0 \\
+            1 & 2  & 0 \\
+            0 & 0  & 2
+        \end{matrix}\right]$，矩阵$B$为三阶方阵，且$2B^{-1}A + 4E = A $证明$B - 2E $可逆，并求出${(B - 2E)}^{-1} $
 \end{problem}
 \end{document}
 
